@@ -70,7 +70,7 @@ __Server_End_Tecnology__()
     printf "${RED}[-] Verifique a URL informada!!${END}"
   fi
 
-  # Busca informações para obter o server e a tecnologia utilizada
+  # Busca informações para obter o server e a tecnologia utilizada e sua versao
   server=$(echo "$status" | grep -E "Server:" | cut -d ":" -f 2)
   tecnology=$(echo "$status" | grep -E "X-Powered-By:" | cut -d ":" -f 2)
   echo
